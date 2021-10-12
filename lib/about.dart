@@ -10,6 +10,15 @@ class imagen extends StatelessWidget {
   }
 }
 
+class imagen2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Image.network("https://static.standard.co.uk/s3fs-public/thumbnails/image/2017/11/08/16/carluccio-s-italian-restaurant-earlsfield.jpg?width=1200&width=1200&auto=webp&quality=75"),
+    );
+  }
+}
+
 class descripcion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -31,7 +40,7 @@ class acerca extends StatelessWidget {
       appBar: AppBar(title: Text("Carluccio's Pastas"), backgroundColor: Colors.orange,),
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[imagen(), descripcion()],
+          children: <Widget>[imagen(), descripcion(), imagen2()],
         ),
       )
     );
